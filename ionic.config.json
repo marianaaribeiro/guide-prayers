@@ -1,0 +1,7 @@
+{
+  "name": "guide-prayers",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
