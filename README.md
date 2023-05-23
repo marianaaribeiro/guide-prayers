@@ -1,4 +1,4 @@
-## Funcionalidades
+## Descrição do projeto
 
 É um projeto para guiar indivíduos no caminho certo de Allah, ao saber os horários das orações de acordo com o Pais em que se encontra.
 
