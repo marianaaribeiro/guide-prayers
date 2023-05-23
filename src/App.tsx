@@ -10,7 +10,7 @@ import {
   setupIonicReact,
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
-import { bookOutline, earthOutline } from "ionicons/icons";
+import { bookOutline, earthOutline, images } from "ionicons/icons";
 import PrayerTime from "./pages/PrayerTime/PrayerTime";
 import TabNew from "./pages/TabNew/TabNew";
 
@@ -32,6 +32,7 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
+import CameraApp from "./pages/CameraApp/CameraApp";
 
 setupIonicReact();
 
@@ -43,11 +44,14 @@ const App: React.FC = () => (
           <Route exact path="/tabNew">
             <TabNew />
           </Route>
-          <Route path="/PrayerTime">
+          <Route exact path="/prayerTime">
             <PrayerTime />
           </Route>
+          <Route exact path="/camera">
+            <CameraApp />
+          </Route>
           <Route exact path="/">
-            <Redirect to="/tab1" />
+            <Redirect to="/prayerTime" />
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
@@ -60,7 +64,7 @@ const App: React.FC = () => (
             />
             <IonLabel>Orientações</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="PrayerTime" href="/PrayerTime">
+          <IonTabButton tab="prayerTime" href="/prayerTime">
             <IonIcon
               aria-hidden="true"
               icon={bookOutline}
@@ -68,6 +72,15 @@ const App: React.FC = () => (
               aria-label="Orações"
             />
             <IonLabel>Orações</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="camera" href="/camera">
+            <IonIcon
+              aria-hidden="true"
+              icon={images}
+              size="small"
+              aria-label="camera"
+            />
+            <IonLabel>Camera</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>

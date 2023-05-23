@@ -11,6 +11,7 @@ Protejo de Guia de horário para horação Islamica:
 - Informa a localização
 - O usuário pode direcionar para uma tela de orientação de como realizar as orações
 - Integração com Api de tempo real para buscar os horários corretos das orações
+- Camera nativa, podendo tirar fotos e salvar essas fotos na sua galeria
 
 ## Tecnologia usada
 
@@ -44,6 +45,7 @@ inicializa o projeto em modo de desenvolvimento. Abre em http://localhost:8100/P
 - src
   - assets
   - components
+  - hook
   - pages
   - services
   - theme
@@ -59,6 +61,10 @@ Essa pasta contém as imagens e ícones.
 ## Theme
 
 Essa pasta contém os css globais da aplicação
+
+## Hook
+
+Essa pasta contém todas as logicas que podem ser reutilizadas pelo projeto.
 
 ### Services
 
